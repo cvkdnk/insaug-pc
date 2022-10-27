@@ -1,0 +1,28 @@
+# semantic kitti 数据路径
+data_path: "/home/neu-wang/cvkdnk/workspace/datasets/semantic-kitti/sequences/"
+
+# instance lib 保存路径
+instance_lib: "/home/neu-wang/cvkdnk/workspace/datasets/instance_lib/kitti/"
+
+# 包含标签信息的semantic-kitti.yaml文件路径
+kitti_yaml: "/home/neu-wang/cvkdnk/workspace/dianyun/config/semantic-kitti.yaml"
+
+
+augment_num:
+  2: 20
+  5: 2
+
+# 增强时，按照权重比率随机选ins
+augment weight:
+2:
+  2: 2  # bicycle
+  7: 4  # bicyclist
+  3: 4  # motorcycle
+  8: 8  # motorcyclist
+  6: 1  # person
+  18: 2  # pole
+5:
+  4: 1  # truck
+  5: 1  # other vehicle
+
+
